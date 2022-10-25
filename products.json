@@ -1,0 +1,42 @@
+{
+    "parts": [
+        {
+            "id": 1,
+            "name": "Fiend Frame",
+            "price": 259999,
+            "imgName": "fiend-reynolds.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Cult Ricany Grips",
+            "price": 9999,
+            "imgName": "ricany-grips.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Cult Dehart Tires",
+            "price": 24999,
+            "imgName": "pneu-cult-dehart.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Animal Akimbo Cranks",
+            "price": 129999,
+            "imgName": "akimbo-cranks.jpg"
+        }
+    ],
+    "merch": [
+        {
+            "id": 5,
+            "name": "Endless T-Shirt",
+            "price": 12999,
+            "imgName": "endless-shirt.jpg"
+        },
+        {
+            "id": 6,
+            "name": "Kink Socks",
+            "price": 4999,
+            "imgName": "kink-socks.jpg"
+        }
+    ]
+}
