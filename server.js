@@ -18,7 +18,7 @@ app.get('/store', function(req, res) {
         if(error) {
             res.status(500).end()
         } else {
-            res.render('store.ejs', {
+            res.render('pages/store', {
                 stripePublicKey: stripePublicKey,
                 items: JSON.parse(data)
             })
@@ -27,7 +27,7 @@ app.get('/store', function(req, res) {
 })
 
 app.post('/purchase', function(req, res) {
-    fs.readFile('items.json', function(error, data) {
+    fs.readFile('products.json', function(error, data) {
         if(error) {
             res.status(500).end()
         } else {
