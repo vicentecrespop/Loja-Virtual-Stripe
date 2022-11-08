@@ -13,12 +13,12 @@ app.set('view engine', 'ejs')
 app.use(express.json())
 app.use(express.static('public'))
 
-app.get('/store', function(req, res) {
+app.get('/shop', function(req, res) {
     fs.readFile('products.json', function(error, data) {
         if(error) {
             res.status(500).end()
         } else {
-            res.render('pages/store', {
+            res.render('pages/shop', {
                 stripePublicKey: stripePublicKey,
                 items: JSON.parse(data)
             })
