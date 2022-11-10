@@ -10,6 +10,7 @@ const fs = require('fs')
 const stripe = require('stripe')(stripeSecretKey)
 
 app.set('view engine', 'ejs')
+app.set('views', './views')
 app.use(express.json())
 app.use(express.static('public'))
 
@@ -18,7 +19,7 @@ app.get('/shop', function(req, res) {
         if(error) {
             res.status(500).end()
         } else {
-            res.render('pages/shop', {
+            res.render('shop', {
                 stripePublicKey: stripePublicKey,
                 items: JSON.parse(data)
             })
